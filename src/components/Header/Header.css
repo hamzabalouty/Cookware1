@@ -1,0 +1,158 @@
+.header {
+  max-width: 100%;
+}
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 20px 0;
+}
+.header-container img {
+  margin-left: 50px;
+}
+.header-right {
+  margin-right: 50px;
+  display: flex;
+  gap: 15px;
+}
+.header-nav {
+  display: flex;
+  gap: 15px;
+}
+.header-nav-link {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.header-nav-link:hover {
+  color: #cf2e2e;
+}
+.header-nav-link .header-right {
+  background-color: green;
+}
+.cart-icon,
+.wishlist-icon,
+.menu-icon {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 20px;
+  text-decoration: none;
+}
+.cart-icon:hover,
+.wishlist-icon:hover,
+.menu-icon:hover {
+  color: #cf2e2e;
+}
+.menu-icon {
+  opacity: 0;
+  color: #cf2e2e;
+}
+.header-modal button {
+  border: 1px solid #cf2e2e;
+  background-color: #fff;
+  color: #cf2e2e;
+  width: 70px;
+  height: 40px;
+}
+.header-nav .active {
+  color: #cf2e2e;
+}
+/* START RWD */
+@media screen and (max-width: 990px) {
+  .header {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .header-container {
+    width: 100%;
+  }
+  .menu-icon {
+    opacity: 1;
+  }
+  .cart-icon,
+  .wishlist-icon,
+  .header-nav {
+    display: none;
+  }
+  .header-modal {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    background-color: #f6f6f6;
+    left: 75%;
+    border: none;
+    outline: none;
+    padding: 20px;
+  }
+  .modal-list {
+    margin-top: 30px;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .modal-list li {
+    border-bottom: 1px solid #000;
+  }
+  .modal-link {
+    transition: 0.5s;
+    cursor: pointer;
+    color: #cf2e2e;
+  }
+  .modal-link:hover {
+    padding-left: 20px;
+  }
+  .modal-link {
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 581px) and (max-width: 680px) {
+  .header {
+    max-width: 100%;
+  }
+  .header-container {
+    width: 100%;
+  }
+  .menu-icon {
+    margin-left: -100px;
+  }
+  .header-modal {
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    background-color: #f6f6f6;
+    left: 70%;
+    border: none;
+    outline: none;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    max-width: 100%;
+  }
+  .header-modal {
+    left: 0;
+    top: 0;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .header {
+    max-width: 100%;
+  }
+  .header-modal {
+    left: 0;
+    top: 0;
+    width: 80%;
+  }
+  .header-container img{
+    display: none;
+  }
+}
+/* END RWD */

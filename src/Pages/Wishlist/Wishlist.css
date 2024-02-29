@@ -1,0 +1,142 @@
+.wishlist {
+  max-width: 100%;
+}
+.wishlist-title {
+  max-width: 100%;
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.wishlist-container {
+  max-width: 100%;
+  margin: 70px 20px;
+}
+.wishlist-container table {
+  border: 1px solid #ddd;
+  width: 100%;
+}
+.wishlist-container img {
+  width: 50%;
+  height: 80px;
+}
+.wishlist-container .delete-icon {
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s;
+  color: #323232;
+}
+.wishlist-container .delete-icon:hover {
+  color: #cf2e2e;
+}
+
+.wishlist-table-head {
+  text-align: left;
+  max-width: 100%;
+}
+.wishlist-table-row {
+  text-align: left;
+  height: 80px;
+  max-width: 100%;
+}
+.wishlist-table-row {
+  border-top: 1px solid #ddd;
+}
+.wishlist .instock {
+  color: greenyellow;
+}
+.wishlist table button {
+  background-color: #cf2e2e;
+  border: 1px solid #cf2e2e;
+  color: #fff;
+  text-align: center;
+  width: 70%;
+  height: 40px;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+.wishlist table button:hover {
+  background-color: #323232;
+  border: 1px solid #323232;
+}
+.wishlist th,
+.wishlist td {
+  padding: 10px;
+}
+
+.wishlist .delete-place {
+  width: 5%;
+}
+.wishlist .img-place,
+.wishlist .stock-place,
+.wishlist .price-place {
+  width: 15%;
+}
+.wishlist .product-place,
+.wishlist .button-place {
+  width: 25%;
+}
+.no-product-para {
+  color: #cf2e2e;
+  padding: 20px;
+  width: 40%;
+}
+
+/* START RWD */
+@media screen and (max-width: 767px) {
+  .wishlist {
+    max-width: 100%;
+  }
+  .wishlist-title {
+    max-width: 100%;
+  }
+  .wishlist-container {
+    max-width: 90%;
+    margin-left: 15px;
+  }
+  .wishlist-container table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .wishlist-table-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+  .wishlist-table-head {
+    display: none;
+  }
+  .wishlist .delete-place {
+    height: 5%;
+    width: auto;
+  }
+  .wishlist .img-place,
+  .wishlist .stock-place,
+  .wishlist .price-place {
+    height: 15%;
+    width: auto;
+  }
+  .wishlist .product-place,
+  .wishlist .button-place {
+    height: 25%;
+    width: auto;
+  }
+  .img-place img {
+    width: 70px;
+  }
+  .wishlist button {
+    width: auto;
+  }
+  .wishlist-table-row:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+  }
+}
+/* END RWD */

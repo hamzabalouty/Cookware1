@@ -1,0 +1,136 @@
+.blog{
+    max-width: 100%;
+}
+.blog-title{
+    max-width: 100%;
+    text-align: center;
+    background-color: #f6f6f6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.blog-container{
+    max-width: 100%;
+    margin-top: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    gap: 6%;
+}
+.blog-left{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.blog-left-box{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.blog-left-box h5{
+    color: #cf2e2e;
+}
+.blog-left-box p{
+    line-height: 1.6;
+}
+.blog-left img{
+    width: 100%;
+}
+.blog-left button{
+    background-color: #323232;
+    border: 1px solid #323232;
+    color: #fff;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.blog-left button:hover{
+    background-color: #cf2e2e;
+    border: 1px solid #cf2e2e;
+}
+.blog-left button:active{
+    transform: scale(0.8);
+}
+
+
+.blog-right{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.blog-right-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.blog-right-post{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.blog-right-post:not(:last-child){
+    border-bottom: 1px solid #ddd;
+}
+.blog-right-post img{
+    height: 100%;
+    width: 80px;
+}
+@media screen and (max-width: 990px) {
+    .blog{
+        max-width: 100%;
+    }
+    .blog-title{
+        max-width: 100%;
+    }
+    .blog-container{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .blog-left,
+    .blog-right{
+        width: 100%;
+    }
+    .blog-left-box{
+        width: 100%;
+    }
+    .blog-left-box img{
+        width: 100%;
+    }
+    .blog-right-box,
+    .blog-right-post{
+        width: 100%;
+    }
+    .blog-right-post{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .blog-container{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .blog-left-box img{
+        width: 100%;
+        height: 250px;
+    }
+}

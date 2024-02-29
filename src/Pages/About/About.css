@@ -1,0 +1,138 @@
+.about {
+  max-width: 100%;
+}
+.about-title {
+  max-width: 100%;
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.about-body {
+  max-width: 100%;
+  margin: 100px 25px 20px;
+}
+.about-team {
+  text-align: center;
+}
+.about-team p {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.about-team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6%;
+  width: 100%;
+}
+.about-team-box {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.about-team-content {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+.about-team-box img {
+  width: 100%;
+}
+
+/* START RWD */
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .about {
+    max-width: 100%;
+  }
+  .about-title {
+    max-width: 100%;
+    text-align: center;
+    background-color: #f6f6f6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .about-body {
+    max-width: 100%;
+    margin-top: 100px;
+    margin-left: 15px;
+  }
+  .about-team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    width: 100%;
+  }
+  .about-team-box {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 767px) {
+  .about {
+    max-width: 100%;
+  }
+  .about-title {
+    max-width: 100%;
+    text-align: center;
+    background-color: #f6f6f6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .about-body {
+    max-width: 100%;
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+  .about-team-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10%;
+  }
+  .about-team-box {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .about-team-box img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about {
+    max-width: 100%;
+  }
+  .about-title {
+    max-width: 100%;
+    text-align: center;
+    background-color: #f6f6f6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .about-body {
+    max-width: 100%;
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+  .about-team-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 25px;
+  }
+  .about-team-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .about-team-box img {
+    width: 100%;
+  }
+}
+/* END RWD */

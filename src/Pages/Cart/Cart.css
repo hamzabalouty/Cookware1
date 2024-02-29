@@ -1,0 +1,148 @@
+.cart {
+  max-width: 100%;
+}
+.cart-title {
+  max-width: 100%;
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.cart-container {
+  max-width: 100%;
+  margin: 70px 20px;
+}
+.cart-container table {
+  border: 1px solid #ddd;
+  width: 100%;
+}
+.cart-container img {
+  width: 50%;
+  height: 80px;
+}
+.cart-container .delete-icon {
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s;
+  color: #323232;
+}
+.cart-container .delete-icon:hover {
+  color: #cf2e2e;
+}
+
+.cart-table-head {
+  text-align: left;
+  max-width: 100%;
+}
+.cart-table-row {
+  text-align: left;
+  height: 80px;
+  max-width: 100%;
+}
+.cart-table-row{
+  border-top: 1px solid #ddd;
+}
+.cart .instock {
+  color: greenyellow;
+}
+.cart table button {
+  background-color: #cf2e2e;
+  border: 1px solid #cf2e2e;
+  color: #fff;
+  text-align: center;
+  width: 70%;
+  height: 40px;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+.cart table button:hover {
+  background-color: #323232;
+  border: 1px solid #323232;
+}
+.cart th,
+.cart td {
+  padding: 10px;
+}
+
+.cart .delete-place {
+  width: 7%;
+}
+.cart .img-place,
+.cart .quantity-place,
+.cart .price-place {
+  width: 16%;
+}
+.cart .product-place,
+.cart .subtotal-place {
+  width: 25%;
+}
+.subtotal-place p,
+.total-price-val p{
+  color: #cf2e2e;
+  font-weight: bold;
+  font-size: 20px;
+}
+.cart-table-row .total-price{
+  width: auto;
+  border-right: 1px solid #ddd;
+  text-align: center;
+}
+
+/* START RWD */
+@media screen and (max-width: 767px) {
+  .cart{
+    max-width: 100%;
+  }
+  .cart-title{
+    max-width: 100%;
+  }
+  .cart-container{
+    max-width: 90%;
+    margin-left: 15px;
+  }
+  .cart-container table{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .cart-table-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+  .cart-table-head{
+    display: none;
+  }
+  .cart .delete-place {
+    height: 5%;
+    width: auto;
+  }
+  .cart .img-place,
+  .cart .quantity-place,
+  .cart .price-place {
+    height: 15%;
+    width: auto;
+  }
+  .cart .product-place,
+  .cart .subtotal-place {
+    height: 25%;
+    width: auto;
+  } 
+  .img-place img{
+    width: 70px;
+  }
+  .cart button{
+    width: auto;
+  }
+  .cart-table-row:not(:last-child){
+    border-bottom: 1px solid #ddd;
+  }
+}
+/* END RWD */

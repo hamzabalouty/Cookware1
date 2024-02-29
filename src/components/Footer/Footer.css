@@ -1,0 +1,78 @@
+.footer {
+  max-width: 100%;
+  background-color: #2c2828;
+}
+.footer-container {
+  max-width: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  gap: 6%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer-box {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-box h3,
+.footer-box p {
+  color: #fff;
+}
+.footer-box img {
+  width: 100px;
+}
+
+.footer-search {
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  height: 40px;
+}
+.footer-search input {
+  margin-left: 5px;
+  height: 100%;
+  width: 75%;
+}
+.footer-search button {
+  margin-right: 5px;
+  height: 100%;
+  width: 25%;
+  background-color: #f75948;
+  color: #fff;
+  border: 1px solid #f75948;
+  outline: none;
+}
+
+/* START RWD */
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .footer {
+    max-width: 100%;
+  }
+  .footer-container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .footer-box {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    max-width: 100%;
+  }
+  .footer-container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .footer-box {
+    width: 90%;
+  }
+}
+/* END RWD */
